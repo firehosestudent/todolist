@@ -74,8 +74,13 @@ $(function() {
         var htmlString = taskHtml(data);
         var ulTodos = $('.todo-list');
         ulTodos.append(htmlString);
-        $('.toggle').click(toggleTask)        
+        $('.toggle').click(toggleTask)
+        $('.new-todo').val("");        
       });
+    });
+
+    $(document).ready(function() {
+      Paloma.start();
     });
 
 
